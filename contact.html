@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./images/favicons/favicon.ico" />
+    <title>Dream Steals Warehouse - Contact Us</title>
+    <link rel="stylesheet" href="./styles/site.css" />
+</head>
+
+<body>
+    
+    <header class="banner">
+        <div class="headercontainer">
+            <a href="index.html">
+                <img id="logo" src="./images/logos/LOGO1.png" alt="Dream Steals Warehouse Logo" />
+            </a>
+            <h1>Dream Steals Warehouse</h1>
+            <p><a href="http://www.dreamstealswarehouse.com" target="_blank">www.dreamstealswarehouse.com</a></p>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu  -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bedding.html">Bedding</a></li>
+            <li><a href="appliances.html">Appliances</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="contactheader">We'd Love to Hear From You!</h2>
+            <p>
+                If you have any questions, inquiries, or would like to learn more
+                about our products, feel free to contact us using the form below or
+                through the contact options provided.
+            </p>
+
+            <form class="contact-form" action="mailto:info@dreamstealswarehouse.com" method="post"
+                enctype="text/plain">
+                <div class="formdivs">
+                    <label for="name">Your Name:</label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required />
+                </div>
+
+                <div class="formdivs">
+                    <label for="email">Your Email:</label>
+                    <input id="email" name="email" placeholder="Enter your email" required />
+                </div>
+
+                <div class="formdivs">
+                    <label id="msglabel" for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Write your message here"
+                        required></textarea>
+                </div>
+
+                <!-- Dropdown Menu -->
+                <div>
+                    <label for="inquiryType">Inquiry Type:</label>
+                    <select id="inquiryType" name="inquiryType" required>
+                        <option value="productInquiry">Product Inquiry</option>
+                        <option value="shippingInquiry">Shipping Inquiry</option>
+                        <option value="generalFeedback">General Feedback</option>
+                    </select>
+                </div><br>
+
+
+                <div class="gridtitlecontainer">
+
+                    <div id="gridtitle1">Preferred Contact Method:</div>
+                    <div id="gridtitle2">How did you hear about us?</div>
+
+                </div>
+
+                <div id="gridform">
+
+                    <!-- Radio Buttons -->
+
+
+                    <div>
+
+
+                        <label for="phone">Phone </label>
+                        <input class="radiobox" type="radio" id="phone" name="contactMethod" value="phone" />
+
+                        <label for="emaill">Email</label>
+                        <input class="radiobox" type="radio" id="emaill" name="contactMethod" value="email" />
+
+                        <label for="socialMedia">Social Media</label>
+                        <input class="radiobox" type="radio" id="socialMedia" name="contactMethod"
+                            value="socialMedia" />
+
+                    </div>
+
+                    <!-- Hear About Us? Checkboxes -->
+
+                    <div>
+
+
+
+                        <label for="socialMediaCheck">Social Media </label>
+                        <input class="checkboxes" type="checkbox" id="socialMediaCheck" name="howHeard[]"
+                            value="Social Media" />
+
+                        <label for="friendCheck">Friend/Family</label>
+                        <input class="checkboxes" type="checkbox" id="friendCheck" name="howHeard[]"
+                            value="Friend/Family" />
+
+                        <label for="searchCheck">Online Search</label>
+                        <input class="checkboxes" type="checkbox" id="searchCheck" name="howHeard[]"
+                            value="Online Search" />
+
+                        <label for="advertisementCheck">Advertisement</label>
+                        <input class="checkboxes" type="checkbox" id="advertisementCheck" name="howHeard[]"
+                            value="Advertisement" />
+
+                        <label for="otherCheck">Other</label>
+                        <input class="checkboxes" type="checkbox" id="otherCheck" name="howHeard[]" value="Other" />
+
+                    </div>
+
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div>
+                <img class="contactimg" src="./images/contact/image1.png" alt="Contact Logo" />
+            </div>
+
+            <h3>Other Ways to Reach Us</h3>
+            <table>
+                <tr>
+                    <td>
+                        <a href="mailto:info@dreamstealswarehouse.com">Email: info@dreamstealswarehouse.com</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="tel:+18192013232">Phone: +1 (819) 201-3232</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>
+                            <a id="fbsvg" href="https://facebook.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path d="M279.14 288l14.22-92.66h-88.91V133.29c0-25.35 12.42-50.06 52.24-50.06H293V6.26S273.26 0 248.66 0c-73.3 0-121 44.38-121 124.72v70.62H56.89V288h70.78v224h100.2V288z" />
+                                </svg>
+                                acebook Marketplace
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <section id="map">
+                <h2><a href="https://www.google.com/maps/dir/45.4361088,-75.8054912/2101+Bantree+Street,+Ottava,+Ontario/@45.4262294,-75.7504943,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cce0f05e71606bd:0xb03827e969e78534!2m2!1d-75.6125749!2d45.4065233?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">
+                        Get Directions</a></h2>
+                <div class="map-container">
+
+                    <!-- Embedded Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d44805.57351615373!2d-75.75049445571588!3d45.422478887827594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d45.4361088!2d-75.80549119999999!4m5!1s0x4cce0f05e71606bd%3A0xb03827e969e78534!2s2101%20Bantree%20Street%2C%20Ottava%2C%20Ontario!3m2!1d45.406523299999996!2d-75.6125749!5e0!3m2!1sen!2sca!4v1732216007798!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+
+
+        </section>
+        <p>
+            Note: Only some of the items we sell are posted on Facebook
+            Marketplace; you may contact the facebook representative to inquire
+            more info.
+        </p>
+
+    </main>
+
+    <footer class="footer-nav">
+        <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bedding.html">Bedding</a></li>
+            <li><a href="appliances.html">Appliances</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
