@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/png" href="./images/favicons/favicon.ico" />
-    <title>Dream Steals Warehouse - Contact Us</title>
-    <link rel="stylesheet" href="./styles/site.css" />
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicons/favicon.ico">
+    <title>DSW - Contact Us</title>
+    <link rel="stylesheet" href="./styles/site.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <header class="banner">
         <div class="headercontainer">
             <a href="index.html">
-                <img id="logo" src="./images/logos/LOGO1.png" alt="Dream Steals Warehouse Logo" />
+                <img id="logo" src="./images/logos/LOGO1.png" alt="Dream Steals Warehouse Logo">
             </a>
             <h1>Dream Steals Warehouse</h1>
             <p><a href="http://www.dreamstealswarehouse.com" target="_blank">www.dreamstealswarehouse.com</a></p>
@@ -27,7 +27,7 @@
     </header>
 
     <!-- Hamburger Menu  -->
-    <input type="checkbox" id="menu-toggle" />
+    <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
     <nav class="main-nav">
@@ -43,7 +43,7 @@
     <main>
         <section>
             <h2 id="contactheader">We'd Love to Hear From You!</h2>
-            <p>
+            <p class="pp">
                 If you have any questions, inquiries, or would like to learn more
                 about our products, feel free to contact us using the form below or
                 through the contact options provided.
@@ -53,29 +53,33 @@
                 enctype="text/plain">
                 <div class="formdivs">
                     <label for="name">Your Name:</label>
-                    <input id="name" type="text" name="name" placeholder="Enter your name" required />
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
                 </div>
 
                 <div class="formdivs">
                     <label for="email">Your Email:</label>
-                    <input id="email" name="email" placeholder="Enter your email" required />
+                    <input id="email" name="email" placeholder="Enter your email" required>
                 </div>
 
                 <div class="formdivs">
                     <label id="msglabel" for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="7" placeholder="Write your message here"
                         required></textarea>
+                 <!-- Dropdown Menu -->
                 </div>
-
-                <!-- Dropdown Menu -->
-                <div>
+                
+                <div class="formdivs">
                     <label for="inquiryType">Inquiry Type:</label>
                     <select id="inquiryType" name="inquiryType" required>
+                        <option value="">--Select--</option>
                         <option value="productInquiry">Product Inquiry</option>
                         <option value="shippingInquiry">Shipping Inquiry</option>
                         <option value="generalFeedback">General Feedback</option>
                     </select>
-                </div><br>
+                </div>
+
+
+                
 
 
                 <div class="gridtitlecontainer">
@@ -90,19 +94,19 @@
                     <!-- Radio Buttons -->
 
 
-                    <div>
+                    <div class="div">
 
-
+                        <input class="radiobox" type="radio" id="phone" name="contactMethod" value="phone">
                         <label for="phone">Phone </label>
-                        <input class="radiobox" type="radio" id="phone" name="contactMethod" value="phone" />
-
+                        
+                        <input class="radiobox" type="radio" id="emaill" name="contactMethod" value="email">
                         <label for="emaill">Email</label>
-                        <input class="radiobox" type="radio" id="emaill" name="contactMethod" value="email" />
+                        
+                        <input class="radiobox" type="radio" id="socialMedia" name="contactMethod"
+                            value="socialMedia">
 
                         <label for="socialMedia">Social Media</label>
-                        <input class="radiobox" type="radio" id="socialMedia" name="contactMethod"
-                            value="socialMedia" />
-
+                        
                     </div>
 
                     <!-- Hear About Us? Checkboxes -->
@@ -110,25 +114,25 @@
                     <div>
 
 
-
-                        <label for="socialMediaCheck">Social Media </label>
                         <input class="checkboxes" type="checkbox" id="socialMediaCheck" name="howHeard[]"
-                            value="Social Media" />
-
-                        <label for="friendCheck">Friend/Family</label>
+                            value="Social Media">
+                        <label for="socialMediaCheck">Social Media </label>
+                        
                         <input class="checkboxes" type="checkbox" id="friendCheck" name="howHeard[]"
-                            value="Friend/Family" />
+                            value="Friend/Family">
+                        <label for="friendCheck">Friend/Family</label>
+                        
+                        <input class="checkboxes" type="checkbox" id="searchCheck" name="howHeard[]"
+                            value="Online Search">
 
                         <label for="searchCheck">Online Search</label>
-                        <input class="checkboxes" type="checkbox" id="searchCheck" name="howHeard[]"
-                            value="Online Search" />
 
-                        <label for="advertisementCheck">Advertisement</label>
                         <input class="checkboxes" type="checkbox" id="advertisementCheck" name="howHeard[]"
-                            value="Advertisement" />
-
+                        value="Advertisement"> 
+                        <label for="advertisementCheck">Advertisement</label>
+                       
+                        <input class="checkboxes" type="checkbox" id="otherCheck" name="howHeard[]" value="Other">
                         <label for="otherCheck">Other</label>
-                        <input class="checkboxes" type="checkbox" id="otherCheck" name="howHeard[]" value="Other" />
 
                     </div>
 
@@ -137,7 +141,7 @@
             </form>
 
             <div>
-                <img class="contactimg" src="./images/contact/image1.png" alt="Contact Logo" />
+                <img class="contactimg" src="./images/contact/image1.png" alt="Contact Logo">
             </div>
 
             <h3>Other Ways to Reach Us</h3>

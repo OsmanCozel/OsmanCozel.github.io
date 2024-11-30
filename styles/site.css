@@ -98,7 +98,7 @@ ul {
     width: 626px;
     border-radius: 60px;
     margin: 10px;
-    margin-bottom: 1px;
+    
 
 }
 
@@ -121,10 +121,11 @@ ul {
 }
 
 #mattressimg {
-    width: 705px;
+    width: 630px;
+    height: 630px;
     border-radius: 70px;
     margin: 10px;
-    margin-bottom: 1px;
+
 
 }
 
@@ -246,7 +247,10 @@ main {
     display: none;
 }
 
+.pp{
+    margin-bottom: 35px;
 
+}
 
 .contact-form {
     width: 100%;
@@ -265,7 +269,9 @@ main {
 label {
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: left;
 }
+
 
 input,
 textarea {
@@ -391,6 +397,10 @@ button:hover {
 
 .col-3 {
     width: 25%;
+}
+
+.col-2{
+    width: 70%;
 }
 
 .col-6 {
@@ -519,8 +529,10 @@ hr.solid {
 
 #gridform{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr;
     margin-bottom: 20px;
+
+    
     
 }
 
@@ -530,24 +542,27 @@ hr.solid {
 }
 
 
-#gridform div label{
+#gridform .div label{
     
-    text-align: end;
+    text-align:left;
+    grid-column: 2;
 }
 
 .radiobox{
-    grid-column: 2;
-    justify-self: center;
+    grid-column: 1;
+    justify-self: right;
     width: 20px;
     margin-top: 0;
+    margin-right: 10px;
     margin-bottom: 25px;
 }
 
 .checkboxes{
-    grid-column: 2;
-    justify-self: center;
+    grid-column: 1;
+    justify-self: right;
     width: 20px;
     margin-top: 0;
+    margin-right: 10px;
     margin-bottom: 12px;
 }
 
@@ -555,7 +570,7 @@ hr.solid {
 .gridtitlecontainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: -5px;
+   
 
 }
 
