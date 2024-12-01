@@ -67,7 +67,6 @@ body {
 
 ul {
     list-style-type: none;
-
 }
 
 
@@ -95,8 +94,9 @@ ul {
 
 #applianceimg {
 
-    width: 626px;
-    border-radius: 60px;
+    width: 630px;
+    height: 630px;
+    border-radius: 70px;
     margin: 10px;
     
 
@@ -768,6 +768,75 @@ h2 {
 
 
 
+/* Basic Styles for Footer Images */
+
+.footer-p{
+    color:  rgb(45, 45, 171);
+    font-size: 0.7em;
+}
+
+.footer-h{
+    color: #0a1a4f;
+
+}
+.footer-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.footer-image-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-image-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-image-list img {
+    max-width: 100px; /* Adjust the size of the images */
+    height: auto;
+    display: block;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1720px) {
+    .footer-image-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for screens below 1720px */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-image-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for screens below 1024px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-image-list {
+        grid-template-columns: 1fr; /* 1 column for screens below 768px */
+    }
+}
+
+/* Additional Styling for Spacing */
+.footer-images h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
 
 /*desktop specific*/
 
@@ -865,12 +934,20 @@ h2 {
         text-align: center;
     }
 
-    #applianceimg,
+   
     #mattressimg {
         width: 100%;
+        height: 400px;
         padding: 0;
         margin: 0;
+    }
 
+    #applianceimg{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        
     }
 
     .indexsection {
@@ -893,6 +970,8 @@ h2 {
         padding: 15px 20px;
         /* Increase padding for better touch support */
     }
+
+    
 
 
     .header-nav {
